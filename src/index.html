@@ -1,13 +1,132 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>SecondLesson</title>
+  <title>Проект</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .header{
+      position: fixed;
+      width: 98vw;
+      height: 100px;
+      z-index: 2;
+      text-align: center;
+      border: solid black;
+      background-color: tan;
+    }
+    .picture{
+      position: absolute;
+      left: 1350px;
+      top: 115px;
+      width: 550px;
+      height: 450px;
+    }
+    .text_under{
+      position: absolute;
+      left: 1350px;
+      top: 460px;
+      width: 560px;
+      height: 100px;
+      text-align: center;
+      background-color: rgb(134, 40, 211);
+    }
+    .text_content{
+      position: absolute;
+      left: 450px;
+      top: 160px;
+      width: 890px;
+      height: 1300px;
+      text-align: left;
+      border: solid red;
+      border-radius: 30px;
+      text-align: center;
+      background-color: burlywood;
+    }
+    .buttons{
+      position: fixed;
+      left: 0px;
+      top: 160px;
+      width: 300px;
+      height: 200px;
+      border: solid blue;
+      background-color: lightyellow;
+    }
+    .return{
+      position: absolute;
+      left: 1590px;
+      top: 520px;
+      width: 300px;
+      height: 300px;
+      border: solid black;
+      background-color: whitesmoke;
+    }
+  </style>
 </head>
-<body>
-  <app-root></app-root>
+<body bgcolor="#FFDAB9">
+  <div class="header" id="main">
+    <h2>Идея проекта</h2>
+    <h3>Совместная разработка сайта по типу "Steam 2.0"</h3>
+  </div>
+  <div class="picture">
+    <img
+    src="https://s1.1zoom.ru/big7/17/Assault_rifle_AK-47_Russian_512156_2560x1604.jpg"
+    width="560px"
+    height="350px"
+    >
+  </div>
+  <div style="color: #000000;" class="text_under">
+    <h3>Подпись под картинкой</h3>
+  </div>
+  <div class="text_content">
+    <h4>
+      <h1>Идея совместного проекта</h1>
+      <img
+      src="https://www.digiseller.ru/preview/611383/p1_2600520_acfa01f2.jpg"
+      width="560px"
+      height="350px"
+      >
+      <br>
+      <h3>КОНТЕНТ</h3>
+      <h3>Контента не будет<h3>
+      <h2>я его<h2>
+      <h1>украл<h1>
+      <br>
+        <h2>
+        <p id="links">ПОЛЕЗНЫЕ ССЫЛКИ</p>
+        <br>
+        <a href="https:/yandex.ru" target="_blank"><h3>Яндекс</h3></a>
+        <a href="https:/google.com" target="_blank"><h3>Google</h3></a>
+        <a href="https:/vk.com" target="_blank"><h3>VK</h3></a>
+      </h2>
+    </h4>
+  </div>
+  <div class="buttons">
+    <form>
+      <h2>
+        Навигация:
+      </h2>
+      <nav>
+        <ol><a href="#main">Главная</a></ol>
+        <ol><a href="#links">Полезные ссылки</a></ol>
+        <ol><a href="#return_">Обратная связь</a></ol>
+      </nav>
+  </div>
+  <div class="return">
+    <form>
+      <label>
+        <h3 id="return_">Обратная связь</h3>
+        Ваша почта
+        <br>
+        <input type="email" placeholder="example@example.ru">
+        <br>
+        Ваше сообщение
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit">
+      </label>
+    </form>
+  </div>
 </body>
 </html>
