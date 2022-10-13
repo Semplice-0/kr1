@@ -2,31 +2,22 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Проект</title>
+  <title>К/Р</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    .header{
-      position: fixed;
-      width: 98vw;
-      height: 100px;
-      z-index: 2;
-      text-align: center;
-      border: solid black;
-      background-color: tan;
-    }
     .picture{
       position: absolute;
       left: 1350px;
-      top: 115px;
+      top: 1px;
       width: 550px;
       height: 450px;
     }
     .text_under{
       position: absolute;
       left: 1350px;
-      top: 460px;
+      top: 351px;
       width: 560px;
       height: 100px;
       text-align: center;
@@ -35,10 +26,12 @@
     .text_content{
       position: absolute;
       left: 450px;
-      top: 160px;
+      top: 1px;
       width: 890px;
       height: 1300px;
       text-align: left;
+      overflow: hidden;
+      word-wrap: break-word;
       border: solid red;
       border-radius: 30px;
       text-align: center;
@@ -47,8 +40,8 @@
     .buttons{
       position: fixed;
       left: 0px;
-      top: 160px;
-      width: 300px;
+      top: 10px;
+      width: 440px;
       height: 200px;
       border: solid blue;
       background-color: lightyellow;
@@ -56,7 +49,7 @@
     .return{
       position: absolute;
       left: 1590px;
-      top: 520px;
+      top: 450px;
       width: 300px;
       height: 300px;
       border: solid black;
@@ -65,10 +58,6 @@
   </style>
 </head>
 <body bgcolor="#FFDAB9">
-  <div class="header" id="main">
-    <h2>Идея проекта</h2>
-    <h3>Совместная разработка сайта по типу "Steam 2.0"</h3>
-  </div>
   <div class="picture">
     <img
     src="https://s1.1zoom.ru/big7/17/Assault_rifle_AK-47_Russian_512156_2560x1604.jpg"
@@ -79,7 +68,7 @@
   <div style="color: #000000;" class="text_under">
     <h3>Подпись под картинкой</h3>
   </div>
-  <div class="text_content">
+  <div class="text_content" id="main">
     <h4>
       <h1>Идея совместного проекта</h1>
       <img
@@ -88,17 +77,19 @@
       height="350px"
       >
       <br>
-      <h3>КОНТЕНТ</h3>
-      <h3>Контента не будет<h3>
-      <h2>я его<h2>
-      <h1>украл<h1>
+      <h2>Главная</h2>
+      <br>
+      <h3>
+        Проект будет ориентирован на создание сайта, похожего на всем известный "Steam"
+      </h3>
       <br>
         <h2>
         <p id="links">ПОЛЕЗНЫЕ ССЫЛКИ</p>
         <br>
-        <a href="https:/yandex.ru" target="_blank"><h3>Яндекс</h3></a>
-        <a href="https:/google.com" target="_blank"><h3>Google</h3></a>
-        <a href="https:/vk.com" target="_blank"><h3>VK</h3></a>
+          <a href="https:/yandex.ru" target="_blank"><h3>Яндекс</h3></a>
+          <a href="https:/google.com" target="_blank"><h3>Google</h3></a>
+          <a href="https:/vk.com" target="_blank"><h3>VK</h3></a>
+          <a href="https://store.steampowered.com/" target="_blank"><h3>Steam</h3></a>
       </h2>
     </h4>
   </div>
