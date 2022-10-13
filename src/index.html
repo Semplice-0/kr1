@@ -29,7 +29,7 @@
       top: 1px;
       width: 890px;
       height: 1300px;
-      text-align: left;
+      text-align: center;
       overflow: hidden;
       word-wrap: break-word;
       border: solid red;
@@ -55,6 +55,11 @@
       border: solid black;
       background-color: whitesmoke;
     }
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
   </style>
 </head>
 <body bgcolor="#FFDAB9">
@@ -79,18 +84,31 @@
       <br>
       <h2>Главная</h2>
       <br>
-      <h3>
+      <h2>Сама идея</h2>
+      <h3 style="margin: 0px 10px 0px 10px;">
         Проект будет ориентирован на создание сайта, похожего на всем известный "Steam"
+        <h3>То есть в нем, как и в обычном стиме, будет доступен выбор игр, доступна регистрация пользователей, доступны комментарии к играм</h3>
       </h3>
       <br>
-        <h2>
+      <h2>Зачем это нужно?</h2>
+      <h3>Сейчас очень широко распространяется сфера игр, и эта сфера в наше время очень прибыльна, то есть многие игры пользуются популярностью, чтобы приносить доход своим разработчикам</h3>
+      <div class="center">
+        <table>
+          <tr><th>Что будет</th><th>что сделано</th></tr>
+          <tr><td>Свой магазин игр</td><td>Ничего</td></tr>
+        </table>
+      </div> 
+      <br>
+        <h4>
         <p id="links">ПОЛЕЗНЫЕ ССЫЛКИ</p>
         <br>
           <a href="https:/yandex.ru" target="_blank"><h3>Яндекс</h3></a>
           <a href="https:/google.com" target="_blank"><h3>Google</h3></a>
           <a href="https:/vk.com" target="_blank"><h3>VK</h3></a>
           <a href="https://store.steampowered.com/" target="_blank"><h3>Steam</h3></a>
-      </h2>
+          <a href="https://github.com/KholodovIlya" target="_blank"><h3>GitHub разработчика Ильи</h3></a>
+          <a href="https://github.com/Semplice-0" target="_blank"><h3>GitHub разработчика Святослава</h3></a>
+      </h3>
     </h4>
   </div>
   <div class="buttons">
@@ -114,7 +132,12 @@
         <br>
         Ваше сообщение
         <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="7"></textarea>
+        <br>
+        Ваш возраст
+        <br>
+        <input type="number">
+        <br>
         <input type="submit">
       </label>
     </form>
